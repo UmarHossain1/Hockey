@@ -7,47 +7,47 @@
     <title>Hockey</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <header class="container mx-auto">
     <!--Navbar-->
     <div class="navbar bg-base-100">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
                 </div>
-                <a class="btn btn-ghost text-4xl  ">Hockey <span class="text-red-500">’</span>s</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-xl font-[500]">
-                    <li class="hover:text-red-400 duration-300 easy-in-out"><a>Home</a></li>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
-                </ul>
             </div>
-            <div class="navbar-end flex space-x-5">
-                <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
-                <a class="btn btn-error text-white text-lg font-[500]">Get Ticket</a>
-            </div>
+            <a class="btn btn-ghost text-4xl">Hockey<span class="text-red-500">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl font-[500]">
+                <li class="text-red-500"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end flex space-x-5">
+            <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
+            <a class="btn btn-error text-white text-lg font-[500]">Get Ticket</a>
         </div>
     </div>
+    </div>
     <!--Banner Part-->
-    <div class="relative px-6 lg:px-0">
+    <div class="relative px-6 lg:px-0 mt-12">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="./Images/1.png" class="w-full" />
@@ -85,14 +85,16 @@
         </div>
     </div>
 </header>
-<main class="container mx-auto">
-<!--Club-->
+<main class="container px-12 lg:-0 mx-auto">
+    <!--Club-->
     <section class="mt-24">
         <div class="border-y-[2px] border-dashed py-12 text-center flex flex-col items-center justify-center">
             <h3 class="text-3xl font-bold mb-3">Professional Hockeys Club</h3>
             <p class="opacity-80 w-1/2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                <br>
                 dolor.
-                Purus urna in sit nullam proin. </p>
+                Purus urna in sit nullam proin.
+            </p>
         </div>
         <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="flex flex-col items-center justify-center py-6 space-y-3">
@@ -110,7 +112,7 @@
                     <div class="rotate-90 absolute top-0 left-0 radial-progress text-slate-300" style="--value:87;"
                         role="progressbar"></div>
                 </div>
-                <h6 class="text-xl font-semibold">Prayer Facility</h6>
+                <h6 class="text-xl font-semibold">Experienced Coach</h6>
                 <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
             </div>
             <div class="flex flex-col items-center justify-center py-6 space-y-3">
@@ -119,7 +121,7 @@
                     <div class="rotate-90 absolute top-0 left-0 radial-progress text-slate-300" style="--value:87;"
                         role="progressbar"></div>
                 </div>
-                <h6 class="text-xl font-semibold">Prayer Facility</h6>
+                <h6 class="text-xl font-semibold">Senior Playery</h6>
                 <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
             </div>
             <div class="flex flex-col items-center justify-center py-6 space-y-3">
@@ -128,8 +130,57 @@
                     <div class="rotate-90 absolute top-0 left-0 radial-progress text-slate-300" style="--value:87;"
                         role="progressbar"></div>
                 </div>
-                <h6 class="text-xl font-semibold">Prayer Facility</h6>
+                <h6 class="text-xl font-semibold">Training Ground</h6>
                 <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+            </div>
+        </div>
+    </section>
+    <!--Program Section-->
+    <section class="mt-24">
+        <div class="border-y-[2px] border-dashed py-12 text-center flex flex-col items-center justify-center">
+            <h3 class="text-3xl font-bold mb-3">Program Sections</h3>
+            <p class="opacity-80 w-1/2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                <br>
+                dolor. Purus urna in sit nullam proin.
+            </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="w-full rounded-lg junior-program flex flex-col justify-end items-center p-12 text-white">
+                <div>
+                    <h5 class="text-2xl font-semibold mb-4">Junior Program</h5>
+                    <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
+                        congue
+                        sed et in.</p>
+                    <button class="btn btn-error text-white mb-4">
+                        Register Now!
+                    </button>
+                </div>
+            </div>
+            <div class="w-full rounded-lg senior-program flex flex-col justify-end items-center p-12 text-white">
+                <div>
+                    <h5 class="text-2xl font-semibold mb-4">Teenager Program</h5>
+                    <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
+                        congue
+                        sed et in.</p>
+                    <button class="btn btn-error text-white mb-4">
+                        Register Now!
+                    </button>
+                </div>
+            </div>
+            <div
+                class="w-full lg:col-span-2 rounded-lg prof-program flex flex-col justify-end items-start p-12 text-white">
+                <div>
+                    <h5 class="text-2xl font-semibold mb-4">Professional Program</h5>
+                    <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
+                        congue
+                        sed et in.</p>
+                    <button class="btn btn-error text-white mb-4">
+                        Register Now!
+                    </button>
+                </div>
             </div>
         </div>
     </section>
